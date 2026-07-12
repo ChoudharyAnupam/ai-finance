@@ -58,7 +58,7 @@ The system is divided into two primary microservices to ensure a clean separatio
    ```
 3. **Run Services**:
    - Navigate to `core/` and run `./mvnw spring-boot:run` (Starts on port 8081).
-   - Navigate to `ai/` and run `./mvnw spring-boot:run` (Starts on port 8080).
+   - Navigate to `ai/` and run `./mvnw spring-boot:run` (Starts on port 8082).
 
 ---
 
@@ -67,7 +67,7 @@ To trigger a compliance audit for a specific transaction:
 
 **Request:**
 ```http
-GET http://localhost:8080/api/ai/audit/{transaction_id}
+GET http://localhost:8082/api/ai/audit/{transaction_id}
 ```
 
 **Example Output:**
